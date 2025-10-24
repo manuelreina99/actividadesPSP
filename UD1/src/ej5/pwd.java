@@ -1,14 +1,17 @@
 package ej5;
 
+import java.io.File;
+
 public class pwd {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ProcessBuilder pb= new ProcessBuilder("pwd").inheritIO();
-		
 		try {
-			Process proceso=pb.start();
+		ProcessBuilder pb= new ProcessBuilder("bash","-lc","pwd").directory(new File("/tmp")).inheritIO();
+		Process proceso=pb.start();
+		
+		
 		proceso.waitFor();
 	
 		}
