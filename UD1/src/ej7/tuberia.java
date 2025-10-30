@@ -35,13 +35,13 @@ public class tuberia {
 			
 		}
 		
-		try {
-			ProcessBuilder pb2 = new ProcessBuilder("bash","-lc","wc -w").inheritIO();
-			Process proceso2=pb2.start();
+		//try {
+			//ProcessBuilder pb2 = new ProcessBuilder("bash","-lc","wc -w").inheritIO();
+		//	Process proceso2=pb2.start();
 			
-		}catch(Exception ex){
+		//}catch(Exception ex){
 			
-		}
+		//}
 
 	}
 
